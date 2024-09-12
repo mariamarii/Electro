@@ -1,0 +1,81 @@
+/* login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+  
+  .login-title {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .input-icon {
+    background: #007bff;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .form-control {
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 0.75rem;
+    flex: 1;
+  }
+  
+  .button-container {
+    margin-top: 1rem;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .signup-link {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .signup-link p {
+    margin: 0;
+    color: #666;
+  }
+  
+  .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  

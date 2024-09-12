@@ -1,0 +1,52 @@
+.cart-container {
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  
+  .cart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .cart-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-item button {
+    background: #ff0000; /* Example remove button color */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .cart-summary {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.total-bill {
+    font-size: 1.5rem;
+    color: #333;
+    margin-right: 20px;
+}
+
+.purchase-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.purchase-btn:hover {
+    background-color: #0056b3;
+}
+
+  

@@ -1,0 +1,60 @@
+/* navBar.css */
+
+.navbar {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 10px 20px;
+    border-bottom: 1px solid #dee2e6; /* Subtle border at the bottom */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #343a40; /* Dark grey for the brand */
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #007bff; /* Bootstrap primary blue on hover */
+}
+
+.navbar-nav {
+    margin-right: auto; /* Ensure navbar items are aligned to the right */
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Space between each nav item */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #343a40; /* Dark grey for links */
+    font-size: 1rem;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center; /* Aligns text and icon */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; /* Blue hover effect */
+}
+
+.navbar-nav .nav-item .btn-link {
+    color: #343a40; /* Same color for buttons to match links */
+}
+
+.navbar-nav .nav-item .btn-link:hover {
+    color: #007bff; /* Hover effect for button links */
+}
+
+.nav-item .bi {
+    font-size: 1.2rem; /* Adjust size for icons */
+    margin-right: 5px; /* Small space between icon and text */
+}
+
+.nav-item .bi:hover {
+    color: #007bff; /* Icon hover effect */
+}
+
+.navbar-nav .nav-item .nav-link i {
+    margin-right: 8px; /* Ensure icon and text have space */
+}

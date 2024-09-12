@@ -1,0 +1,204 @@
+/* productList.css */
+.product-card-body a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures the text color is inherited from its parent */
+  }
+  
+  .product-card-body a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover if desired */
+  }
+  
+/* Container Styling */
+.product-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    background: #f0f0f0;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Card Styling */
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image Styling */
+  .product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover  {
+    transform: scale(1.1);
+  }
+  
+  /* Card Body Styling */
+  .product-card-body {
+    padding: 15px;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .product-price {
+    font-size: 1.5rem;
+    color: #ff8800;
+    margin: 10px 0;
+  }
+  
+  /* Expandable Description Styling */
+  .product-description {
+    max-height: 3rem; /* Smaller max height for non-expanded state */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+  
+  .product-description.expanded {
+    max-height: none; /* Allow full text to show when expanded */
+    white-space: normal;
+    padding-bottom: 10px;
+  }
+  
+  Button Styling
+  .btn-link {
+    color: #007bff; /* Button text color */
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .btn-link:hover {
+    color: #0056b3; /* Darker color on hover */
+  }
+  /* productList.css */
+
+/* Add styles for Add to Cart button */
+.add-to-cart-btn {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+ /* Make icons rounded */
+ small-btn {
+    font-size: 1rem; /* Adjust icon size to fit the button */
+    padding: 5px; /* Adjust padding for better centering */
+    border-radius: 50%; /* Makes the buttons circular */
+    width: 35px; /* Set width for consistent circle size */
+    height: 35px; /* Set height for consistent circle size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ensure text is centered */
+    background-color: transparent; /* Background color if needed */
+  }
+  
+  /* Icon container on image */
+  .product-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px; /* Add some space between the icons */
+    z-index: 1; /* Ensure the icons appear above the image */
+  }
+  
+  /* Ensure icons are not affecting the button's size */
+  .product-actions i {
+    font-size: 1rem; /* Adjust font size to fit the button */
+    line-height: 1; /* Ensure the line height doesn't affect vertical alignment */
+  }
+  
+/* Image container */
+.image-container {
+  position: relative; /* Enables absolute positioning inside it */
+  width: 100%;
+  height: auto;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.1); /* Add hover effect on image */
+}
+
+/* Rest of the card styles */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative; /* Ensures the child elements are positioned correctly */
+}
+.filter-container {
+    margin-bottom: 20px;
+    text-align: center;
+    left: 10px;
+}
+
+.filter-container label {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.filter-container select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.filter-container select:hover {
+    border-color: #007bff;
+    background-color: #e9ecef;
+}
+
+.filter-container select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
