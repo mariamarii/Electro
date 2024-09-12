@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import '../style/cart.css'; // Import the CSS for styling
+import '../style/cart.css'; 
 import { removeFromCart } from '../store/cartActions';
 import { Link } from 'react-router-dom';
 
